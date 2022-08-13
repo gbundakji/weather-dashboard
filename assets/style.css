@@ -1,0 +1,292 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 60%;
+}
+
+/* header styling */
+header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(75,105,177);
+    background-image: linear-gradient(90deg, rgba(75,105,177,1) 13%, rgba(35,77,167,1) 42%, rgba(1,1,105,1) 80%);
+}
+
+.heading {
+    color:white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.h1 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* line in between search area and results */
+.border {
+    border: 1px solid black;
+}
+
+/* weather card styling */
+.weather-card {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 80%;
+    margin: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* search form styling */
+.search {
+    width: 20%;
+    margin: 40px;
+    margin-top: auto;
+}
+
+/* search results styling */
+.search-results {
+    width: 65%;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+
+/* card styling */
+.day-card {
+    width: 19%;  
+}
+
+/* city information resutls styling */
+#city {
+    font-size: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 35px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 5px;
+}
+
+/* search button styling */
+#search-btn {
+    background-color: #6699ff;
+    font-size: 25px;
+    color: white;
+}
+
+/* general button styling */
+.btn {
+    font-size: 25px;
+    cursor: pointer;
+    width: 100%;
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 7px 0;
+}
+
+/* line between search and results  */
+hr {
+    border-top: 100% solid black;
+}
+
+/* current weather section  */
+#current-weather {
+    height: 50%;
+    border: 1px solid black;
+}
+
+/* unordered list styling in city section  */
+ul {
+    list-style-type: none;
+    font-size: 35px;
+    font-weight: bold;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+#current-weather-icon {
+    filter: drop-shadow(10px grey);
+}
+
+/* UV inedex styling depending on level of index */
+.low {
+    background-color: green;
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+}
+
+.moderate {
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.high {
+    background-color: red;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* span styling */
+span {
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+}
+/* date styling  */
+h3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+/* card body styling */
+.card-body {
+    background-color:#00334d;
+    border-radius: 10px;
+    height: 300px;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+ /* card info styling */
+p {
+    font-size: 19px;
+    color: white;
+}
+
+/* header styling for 5 day forecast */
+#five-day-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Responsive css */
+@media (max-width: 1144px) {
+    
+    .search {
+        width: 100%;
+        text-align: center;
+    }
+
+    #city-search, hr, .btn {
+        width: 30rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    #city {
+        text-align: center;
+    }
+
+    #search-history {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #search-btn {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .search-results {
+        width: 100%;
+    }
+
+    .day-card {
+        width: 100%;
+    }
+
+    #current-weather {
+        height: 20%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2rem;
+        width: 500px;
+    }
+
+    h2 {
+        justify-content: center;
+    }
+
+    .card-body {
+        background-color: #00334d;
+        height: 20rem;
+        padding-left: 0;
+        padding-top: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 20rem;
+        margin: .5rem auto;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .search {
+        width: 100%;
+    }
+
+    .search-results {
+        width: 100%;
+    }
+
+    .day-card {
+        width: 100%;
+    }
+
+}
+
+/* // Small devices (landscape phones, 630px and up) */
+@media (max-width: 630px) {
+
+    #current-weather {
+        width: 300px;
+    }
+
+    .day-card {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./assets/style.css'>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <!-- title of page -->
+    <header class="heading">Weather Dashboard</header>
+
+    <main id='container' class="container">
+        <div class="row">
+            <!-- search bar -->
+            <div class="search">
+                <div id='search-area'>
+                    <h1 class='h1'>Search for a City: </h1>
+                    <form id='city-search'>
+                        <input name='city' type="text" placeholder="Newport Beach" id='city' autofocus='true'
+                            class='city-input' />
+                        <button type="submit" id='search-btn' class='btn'>Search</button>
+                    </form>
+                    <!-- Search history -->
+                    <div id="search-history"></div>
+                </div>
+            </div>
+            <hr>
+            </hr>
+            <!-- Search results -->
+            <div class="search-results">
+                <div id='five-day' class="weather-card"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src='./assets/script.js'></script>
+
+</body>
+
+</html>
